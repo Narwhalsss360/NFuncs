@@ -7,7 +7,9 @@
 	#include "WProgram.h"
 #endif
 
-#include "NDefs.h"
+#include <NDefs.h>
+
+#define BCD2DEC(num) hornerScheme(num, 0x10, 10)
 
 unsigned long x2i(char*);
 

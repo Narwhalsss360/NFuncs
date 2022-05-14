@@ -1,5 +1,7 @@
 NFuncs              	LITERAL1
 
+BCD2DEC             	LITERAL1
+
 x2i					    KEYWORD2
 toHex					KEYWORD2
 octalToDecimal			KEYWORD2
