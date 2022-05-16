@@ -1,5 +1,5 @@
-#ifndef NFuncs
-#define NFuncs
+#ifndef NFuncs_h
+#define NFuncs_h
 
 #if defined(ARDUINO) && ARDUINO >= 100
 	#include "Arduino.h"
