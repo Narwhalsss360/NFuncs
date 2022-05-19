@@ -5,6 +5,36 @@
 /// Outputs unsinged long from Hex Char array.
 /// </summary>
 /// <param name="s">: Char Array</param>
+/// <param name="len">: Length of characters</param>
+/// <returns>Number From Hex</returns>
+unsigned long x2i(char* s, uint8_t len)
+{
+	unsigned long x = ZERO;
+	uint8_t iter = ZERO;
+	while (iter < len)
+	{
+		char c = *s;
+		if (c >= '0' && c <= '9')
+		{
+			x *= 16;
+			x += c - '0';
+		}
+		else if (c >= 'A' && c <= 'F')
+		{
+			x *= 16;
+			x += (c - 'A') + 10;
+		}
+		else break;
+		s++;
+		iter++;
+	}
+	return x;
+}
+
+/// <summary>
+/// Outputs unsinged long from Hex Char array.
+/// </summary>
+/// <param name="s">: Char Array</param>
 /// <returns>Number From Hex</returns>
 unsigned long x2i(char* s)
 {

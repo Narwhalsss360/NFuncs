@@ -9,7 +9,13 @@
 
 #include <NDefs.h>
 
+#define NFUNCS_MAJOR_VERSION 1
+#define NFUNCS_MINOR_VERSION 1
+#define NFUNCS_PATCH_VERSION 0
+
 #define BCD2DEC(num) hornerScheme(num, 0x10, 10)
+
+unsigned long x2i(char*, uint8_t);
 
 unsigned long x2i(char*);
 
