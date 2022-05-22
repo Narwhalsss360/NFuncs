@@ -19,10 +19,6 @@
     <Text Include="$(MSBuildThisFileDirectory)src\NFuncs.h" />
   </ItemGroup>
   <ItemGroup>
-    <!-- <ClInclude Include="$(MSBuildThisFileDirectory)NFuncs.h" /> -->
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\NDefs\src\NDefs.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)src\NFuncs.cpp" />
   </ItemGroup>
 </Project>
