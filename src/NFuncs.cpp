@@ -93,7 +93,7 @@ String toHex(unsigned long input, byte stringLength)
 /// </summary>
 /// <param name="n">: Octal Number</param>
 /// <returns>int (Base-10)</returns>
-static int octalToDecimal(int n)
+int octalToDecimal(int n)
 {
 	int num = n;
 	int dec_value = ZERO;
