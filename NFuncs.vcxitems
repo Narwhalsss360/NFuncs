@@ -21,4 +21,10 @@
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)src\NFuncs.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\NDefs\README.md" />
+    <None Include="$(MSBuildThisFileDirectory)examples\boolToString\boolToString.ino" />
+    <None Include="$(MSBuildThisFileDirectory)examples\fromRight\fromRight.ino" />
+    <None Include="$(MSBuildThisFileDirectory)examples\mapf\mapf.ino" />
+  </ItemGroup>
 </Project>

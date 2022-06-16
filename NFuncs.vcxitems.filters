@@ -9,8 +9,11 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx</Extensions>
     </Filter>
-    <Filter Include="Library metdata">
+    <Filter Include="Library metadata">
       <UniqueIdentifier>{92001c5b-b807-4ff4-98d2-71c401739c34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Examples">
+      <UniqueIdentifier>{1cdabc55-3fb6-49de-8c71-0b829fbe509a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -23,10 +26,24 @@
       <Filter>Header Files</Filter>
     </Text>
     <Text Include="$(MSBuildThisFileDirectory)keywords.txt">
-      <Filter>Library metdata</Filter>
+      <Filter>Library metadata</Filter>
     </Text>
     <Text Include="$(MSBuildThisFileDirectory)library.properties">
-      <Filter>Library metdata</Filter>
+      <Filter>Library metadata</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\NDefs\README.md">
+      <Filter>Library metadata</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)examples\boolToString\boolToString.ino">
+      <Filter>Examples</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)examples\fromRight\fromRight.ino">
+      <Filter>Examples</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)examples\mapf\mapf.ino">
+      <Filter>Examples</Filter>
+    </None>
   </ItemGroup>
 </Project>
