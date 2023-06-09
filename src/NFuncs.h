@@ -15,20 +15,18 @@
 
 #define BCD2DEC(num) hornerScheme(num, 0x10, 10)
 
-unsigned long x2i(char *);
+unsigned long long hexToInteger(const char *);
 
-unsigned long x2i(char *, uint8_t);
+unsigned long long octalToDecimal(unsigned long long);
 
-String toHex(unsigned long, byte);
+template <typename IntegralType>
+IntegralType mapValue(IntegralType input, IntegralType inputLow, IntegralType inputHigh, IntegralType outputLow, IntegralType outputHigh)
+{
+	return ((input - inputLow) * (outputHigh - outputLow)) / ((inputHigh - inputLow) + outputLow);
+}
 
-int octalToDecimal(int);
+unsigned long long hornerScheme(unsigned long long number, unsigned long long divisor, unsigned long long factor);
 
-double mapf(double, double, double, double, double);
-
-unsigned long hornerScheme(unsigned long, unsigned long, unsigned long);
-
-String boolToString(int);
-
-String fromRight(String, String, byte);
+String fromRight(String left, String right, byte columns);
 
 #endif
