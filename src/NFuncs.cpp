@@ -35,6 +35,34 @@ unsigned long long hornerScheme(unsigned long long number, unsigned long long di
     return result;
 }
 
+char* ulltoa(unsigned long long __value, char* __buffer, unsigned char __radix)
+{
+    constexpr char digits[] = "0123456789ABCDEF";
+    constexpr size_t digit_count = sizeof(digits) - 1;
+
+    if (__radix < 2)
+        __radix = 2;
+    else if (__radix > digit_count)
+        __radix = digit_count;
+
+    char* digit = __buffer + ulltoa_len;
+    *--digit = '\0';
+
+    do
+    {
+        *--digit = digits[__value % __radix];
+        __value /= __radix;
+    } while (__value > 0);
+
+    return digit;
+}
+
+String ulltostr(unsigned long long __value, unsigned char __radix)
+{
+    char buffer[ulltoa_len];
+    return String(ulltoa(__value, buffer, __radix));
+}
+
 String fromRight(String left, String right, byte columns)
 {
     unsigned char whiteSpaceCount = columns - left.length() - right.length();
