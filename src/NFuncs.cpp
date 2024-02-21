@@ -19,6 +19,7 @@ unsigned long long hexToInteger(const char* pointer)
 			break;
 		pointer++;
     }
+    return result;
 }
 
 #warning Not implemented
