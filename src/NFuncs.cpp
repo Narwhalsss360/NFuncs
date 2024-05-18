@@ -22,12 +22,6 @@ unsigned long long hexToInteger(const char* pointer)
     return result;
 }
 
-#warning Not implemented
-unsigned long long octalToDecimal(unsigned long long octal)
-{
-	return 0;
-}
-
 unsigned long long hornerScheme(unsigned long long number, unsigned long long divisor, unsigned long long factor)
 {
     unsigned long long remainder = number % divisor, quotient = number / divisor, result = 0;

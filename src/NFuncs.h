@@ -19,8 +19,6 @@ constexpr size_t ulltoa_len = (sizeof(unsigned long long) * 8) + 1;
 
 unsigned long long hexToInteger(const char *);
 
-unsigned long long octalToDecimal(unsigned long long);
-
 unsigned long long hornerScheme(unsigned long long number, unsigned long long divisor, unsigned long long factor);
 
 template <typename IntegralType>
