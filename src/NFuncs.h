@@ -11,8 +11,8 @@
 #include <WString.h>
 #include <Stream.h>
 
-#define NFUNCS_MAJOR_VERSION 1
-#define NFUNCS_MINOR_VERSION 1
+#define NFUNCS_MAJOR_VERSION 2
+#define NFUNCS_MINOR_VERSION 0
 #define NFUNCS_PATCH_VERSION 0
 
 constexpr size_t ulltoa_len = (sizeof(unsigned long long) * 8) + 1;

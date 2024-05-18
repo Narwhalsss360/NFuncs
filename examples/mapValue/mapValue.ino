@@ -17,7 +17,7 @@ void loop()
     int tempValue = analogRead(A1);
 
     //mapping a float.
-    newValue = mapf(tempValue, 0, 1023, 0, 100);
+    newValue = mapValue<float>(tempValue, 0, 1023, 0, 100);
 
     //Printing mapped value.
     Serial.print(newValue);
